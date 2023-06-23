@@ -23,7 +23,7 @@ resource "aws_iam_role" "lambda_role" {
 EOF
 }
 
-# IAM policy for logging from a lambda
+# IAM policy for logging from  lambda
 
 resource "aws_iam_policy" "iam_policy_for_lambda" {
 
