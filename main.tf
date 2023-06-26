@@ -38,7 +38,9 @@ resource "aws_iam_policy" "iam_policy_for_lambda" {
       "Action": [
         "logs:CreateLogGroup",
         "logs:CreateLogStream",
-        "logs:PutLogEvents"
+        "logs:PutLogEvents",
+        "lambda:InvokeAsync",
+				"lambda:InvokeFunction"
       ],
       "Resource": "arn:aws:logs:*:*:*",
       "Effect": "Allow"
