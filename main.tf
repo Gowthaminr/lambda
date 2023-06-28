@@ -8,17 +8,23 @@ resource "aws_iam_role" "lambda_role" {
  name   = "terraform_aws_lambda_role"
  assume_role_policy = <<EOF
 {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Action": "sts:AssumeRole",
-      "Principal": {
-        "Service": "lambda.amazonaws.com"
-      },
-      "Effect": "Allow",
-      "Sid": ""
-    }
-  ]
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents",
+                "iam:CreateRole",
+                "iam:CreatePolicy",
+                "iam:ListAttachedGroupPolicies",
+                "iam:AttachGroupPolicy"
+            ],
+            "Resource": "arn:aws:logs:*:*:*"
+        }
+    ]
 }
 EOF
 }
