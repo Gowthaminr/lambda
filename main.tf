@@ -2,7 +2,7 @@ provider "aws" {
       region                   = "us-west-1"
       access_key               = "AKIASZDAANNMGMTKAPC5"
       secret_key               = "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"
-#  shared_credentials_files = ["/Users/gowthamir/.aws/credentials"]
+#  shared_credentials_files = ["/Users/gowthamir/.aws/credentials"]                        
 }
 
 resource "aws_iam_role" "lambda_role" {
