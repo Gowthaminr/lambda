@@ -1,7 +1,7 @@
 provider "aws" {
-  region                   = "us-west-1"
-  access_key               = "AKIA5BMGLEQ56KTRH7NK"
-  secret_key               = "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"
+      region                   = "us-west-1"
+      access_key               = "AKIA5BMGLEQ56KTRH7NK"
+      secret_key               = "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"
 #  shared_credentials_files = ["/Users/gowthamir/.aws/credentials"]
 }
 
