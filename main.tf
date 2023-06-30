@@ -17,10 +17,6 @@ resource "aws_iam_role" "lambda_role" {
                 "logs:CreateLogGroup",
                 "logs:CreateLogStream",
                 "logs:PutLogEvents",
-                "iam:CreateRole",
-                "iam:CreatePolicy",
-                "iam:ListAttachedGroupPolicies",
-                "iam:AttachGroupPolicy"
             ],
             "Resource": "arn:aws:logs:*:*:*"
         }
