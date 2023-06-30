@@ -6,8 +6,8 @@ provider "aws" {
 }
 
 resource "aws_iam_role" "lambda_role" {
- name   = "terraform_aws_lambda_role"
- assume_role_policy = <<EOF
+name   = "terraform_aws_lambda_role"
+assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",
   "Statement": [
